@@ -7,4 +7,9 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
+  server: {
+    port: 3000, // Use a port compatible with StackBlitz
+    host: true, // Allow external connections if needed
+  },
+
 });
