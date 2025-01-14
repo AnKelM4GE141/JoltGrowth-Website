@@ -1,5 +1,6 @@
 import React from 'react';
-import { Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, MapPin } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export function Contact() {
   return (
@@ -15,16 +16,18 @@ export function Contact() {
             <div className="mt-8 space-y-6">
               <div className="flex items-center">
                 <Mail className="h-6 w-6 text-fuchsia-500" />
-                <span className="ml-4 text-gray-300">contact@novaagency.com</span>
-              </div>
-              <div className="flex items-center">
-                <Phone className="h-6 w-6 text-fuchsia-500" />
-                <span className="ml-4 text-gray-300">+1 (555) 123-4567</span>
+                <span className="ml-4 text-gray-300">max@joltgrowth.biz</span>
               </div>
               <div className="flex items-center">
                 <MapPin className="h-6 w-6 text-fuchsia-500" />
-                <span className="ml-4 text-gray-300">123 Innovation Street, Tech City, TC 12345</span>
+                <span className="ml-4 text-gray-300">Digital nomads based in one of many of our favorite spots in Eastern USA. (MI, NC, FL)</span>
               </div>
+              <Link
+                to="/book"
+                className="inline-flex items-center px-6 py-3 rounded-lg text-white font-semibold bg-gradient-to-r from-fuchsia-600 to-purple-600 hover:from-fuchsia-700 hover:to-purple-700 transition-colors"
+              >
+                Book a Call
+              </Link>
             </div>
           </div>
           

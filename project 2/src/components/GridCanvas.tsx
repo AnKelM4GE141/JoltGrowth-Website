@@ -12,7 +12,7 @@ export function GridCanvas() {
     if (!ctx) return;
 
     const resizeCanvas = () => {
-      const scale = window.devicePixelRatio || 1;
+      const scale = window.devicePixelRatio || 2;
       canvas.width = window.innerWidth * scale;
       canvas.height = window.innerHeight * scale;
       ctx.scale(scale, scale);
