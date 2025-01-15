@@ -3,6 +3,7 @@ import { Play } from 'lucide-react';
 
 export function HeroVideo() {
   const [isPlaying, setIsPlaying] = React.useState(false);
+  const videoUrl = 'https://uqevveimyjvfnobrwdjk.supabase.co/storage/v1/object/public/vsls/Jan15thVSL.mov';
 
   return (
     <div className="relative rounded-xl overflow-hidden shadow-2xl group">
@@ -17,17 +18,18 @@ export function HeroVideo() {
             </div>
           </div>
         ) : null}
-        <iframe
-          width="100%"
-          height="100%"
-          src={`https://www.youtube.com/embed/dQw4w9WgXcQ${isPlaying ? '?autoplay=1' : ''}`}
-          title="Agency Showreel"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-          className="absolute inset-0 w-full h-full"
-          style={{ display: isPlaying ? 'block' : 'none' }}
-        />
-        {!isPlaying && (
+        {isPlaying ? (
+          <video
+            width="100%"
+            height="100%"
+            controls
+            autoPlay
+            className="absolute inset-0 w-full h-full"
+          >
+            <source src={videoUrl} type="video/quicktime" />
+            Your browser does not support the video tag.
+          </video>
+        ) : (
           <img
             src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1200&h=675"
             alt="Video thumbnail"
