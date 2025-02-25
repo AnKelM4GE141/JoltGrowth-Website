@@ -18,7 +18,7 @@ export function Hero() {
               <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-white mb-4 drop-shadow-[0_0_10px_rgba(255,255,255,0.3)]">
                 We Build & Manage
                 <span className="bg-gradient-to-r from-pink-500 via-fuchsia-500 to-purple-500 text-transparent bg-clip-text"> Growth Systems</span>
-                <br />for Coaches
+                <br />for Online Businesses
               </h1>
               <p className="mt-4 text-lg leading-8 text-gray-300 drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)]">
                 Make life-changing money while entrusting the overwhelming complexity and management to people you can rely on to deliver exceptional results.
